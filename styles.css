@@ -358,6 +358,23 @@ p {
   background: linear-gradient(145deg, #68442e, #2d2520);
 }
 
+.hero-cover-card {
+  display: grid;
+  place-items: center;
+  padding: 0.85rem;
+  background:
+    linear-gradient(180deg, rgba(255, 250, 240, 0.82), rgba(239, 227, 204, 0.42)),
+    radial-gradient(circle at 48% 26%, rgba(229, 201, 137, 0.36), transparent 42%),
+    #4a3527;
+}
+
+.hero-cover-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 18px 24px rgba(43, 30, 20, 0.24));
+}
+
 .book-card.marlee {
   transform: translate(22%, 13%) rotate(7deg);
   background: linear-gradient(145deg, #6f855f, #36492f);
@@ -477,6 +494,14 @@ p {
 
 .marlee-book-cover {
   max-width: 360px;
+}
+
+.memoir-book-cover {
+  max-width: 360px;
+}
+
+.memoir-book-cover img {
+  object-fit: contain;
 }
 
 .book-copy {
