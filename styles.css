@@ -280,6 +280,19 @@ p {
   background: rgba(255, 250, 240, 0.66);
 }
 
+.retailer-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.retailer-actions .button {
+  min-height: 44px;
+  padding-inline: 1rem;
+  font-size: 0.78rem;
+}
+
 .hero-art {
   position: relative;
   min-height: 560px;
@@ -738,6 +751,31 @@ p {
   background: transparent;
 }
 
+.order-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(230px, 1fr));
+  gap: 1rem;
+  min-width: min(100%, 560px);
+}
+
+.order-option {
+  min-width: 0;
+  padding: 1rem;
+  border: 1px solid rgba(255, 250, 240, 0.2);
+  border-radius: 8px;
+  background: rgba(255, 250, 240, 0.08);
+}
+
+.order-option h3 {
+  color: var(--paper);
+  font-size: 1.55rem;
+  line-height: 1.05;
+}
+
+.order-option .retailer-actions {
+  margin-top: 1rem;
+}
+
 .site-footer {
   border-top: 1px solid var(--line);
   padding: 2.5rem max(1rem, calc((100% - 1180px) / 2));
@@ -857,6 +895,11 @@ p {
   .order-section .button-row {
     margin-top: 0;
   }
+
+  .order-options {
+    grid-template-columns: 1fr;
+    min-width: 0;
+  }
 }
 
 @media (max-width: 640px) {
@@ -946,6 +989,11 @@ p {
 
   .button {
     width: 100%;
+  }
+
+  .retailer-actions {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .site-footer {
