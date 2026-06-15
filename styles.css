@@ -377,7 +377,6 @@ p {
 
 .book-card.marlee {
   transform: translate(22%, 13%) rotate(7deg);
-  background: linear-gradient(145deg, #6f855f, #36492f);
 }
 
 .hero-marlee-cover img {
